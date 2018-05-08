@@ -237,7 +237,6 @@ void get_path_rand_dir(bool (*maz)[MAX_COL + 2], element* stack_ele, int* stack_
 			}
 		}
 	}
-
 	//경로 탐색을 위해 stack에 push되었던 값을 출력
 	if (maz[exit.row][exit.col] == 0 && found == true) {
 		printf("the path is \n");
