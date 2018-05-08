@@ -110,7 +110,7 @@ void init_maze(bool (*maz)[MAX_COL + 2], bool(*maze)[MAX_COL]) {
 }
 void setup_maze(bool(*given_maze)[MAX_COL]) {
 	//maze를 입력하는 함수. 문제의 조건에 맞추어 직접 입력하는것이 아닌 코드 내에서 주어진다.
-	int setup_maze[MAX_ROW][MAX_COL] = {
+	bool maze[MAX_ROW][MAX_COL] = {
 		{ 0,0,1,0,1,1,1,0,1,0 },
 		{ 1,0,0,1,1,1,0,1,0,1 },
 		{ 1,1,0,1,1,0,1,0,1,1 },
@@ -125,7 +125,7 @@ void setup_maze(bool(*given_maze)[MAX_COL]) {
 	//입력받은 값을 바로 given_maze 배열에 집어넣는다.
 	for (int i = 0; i < MAX_ROW; i++) {
 		for (int j = 0; j < MAX_COL; j++) {
-			given_maze[i][j] = (bool)setup_maze[i][j];
+			given_maze[i][j] = maze[i][j];
 		}
 	}
 }
