@@ -281,7 +281,7 @@ void show_exit(element exit) {
 void init_exit(element* exit, bool(*maz)[MAX_COL + 2]) {
 	//exit값을 초기화 하는 함수
 	int exit_value;
-	printf("Choose MAZE EXIT\nEXIT - RANDOM : Enter 1\nEXIT - (10, 10) : Enter 0\nyour choice is : ");
+	printf("Choose MAZE EXIT\nEXIT - RANDOM : Enter 1\nEXIT - (MAX_ROW, MAX_COL) : Enter 0\nyour choice is : ");
 	
 	scanf_s("%d", &exit_value);
 	srand(time(NULL));
