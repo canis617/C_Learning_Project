@@ -1,3 +1,16 @@
+/* Student Profile
+ ** Student Name : 조종현
+ ** Student ID : 20150864
+ * File Name : pedigree.c
+ * Discription : 트리를 사용하여 가계도를 입력받는 프로그램이다.
+				 질의문 ? 를 사용하여 가계도를 출력할 수도 있다.
+ * input : >>(char value1)-(F or M or ?)-(char value2)
+ * output : F or M : value1과 value2중 tree에 존재하는 노드에 따라 트리에 노드를 추가한다.
+			? : value1과 value의 관계 즉 부모(F or M), 자식(S, D, C)관게를 출력한다.
+ * version : 1.0v
+ * Date : 2018-05-25
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
